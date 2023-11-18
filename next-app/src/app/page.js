@@ -1,11 +1,11 @@
+import Image from "next/image";
 import Layout from "../../Component/Layout/Layout";
 
 const Page = () => {
   const design = (
     <>
       <Layout>
-        <h1>First App</h1>
-        <h2>Second App</h2>
+        <Image src="/images/bird.jpg" width={900} height={400} />
       </Layout>
     </>
   );

@@ -8,19 +8,34 @@ const Courses = () => {
             title: 'ReactJs',
             price: '3000',
             desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
-            link: '/courses/react'
+            link: '/courses/react',
+            query: {
+                name: 'ReactJs',
+                price: 3000,
+                desc: 'React JS is a frontend language'
+            }
         },
         {
             title: 'AngularJs',
             price: '5000',
             desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
-            link: '/courses/angular'
+            link: '/courses/angular',
+            query: {
+                name: 'AngularJs',
+                price: 5000,
+                desc: 'Angular JS is a frontend language'
+            }
         },
         {
             title: 'NodeJs',
             price: '4000',
             desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
-            link: '/courses/node'
+            link: '/courses/node',
+            query: {
+                name: 'NodeJs',
+                price: 4000,
+                desc: 'Node JS is a Backend language'
+            }
         },
         {
             title: 'React Native',
