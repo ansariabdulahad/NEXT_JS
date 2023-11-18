@@ -1,4 +1,5 @@
 import { Button, Card, CardActions, CardContent, Container, Grid, Typography } from "@mui/material";
+import Link from "next/link";
 
 const Courses = () => {
 
@@ -6,32 +7,38 @@ const Courses = () => {
         {
             title: 'ReactJs',
             price: '3000',
-            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.'
+            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
+            link: '/courses/react'
         },
         {
             title: 'AngularJs',
             price: '5000',
-            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.'
+            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
+            link: '/courses/angular'
         },
         {
             title: 'NodeJs',
             price: '4000',
-            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.'
+            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
+            link: '/courses/node'
         },
         {
             title: 'React Native',
             price: '6000',
-            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.'
+            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
+            link: '/courses/react-native'
         },
         {
             title: 'NextJs',
             price: '4500',
-            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.'
+            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
+            link: '/courses/next'
         },
         {
             title: 'VueJs',
             price: '5500',
-            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.'
+            desc: 'asjkfhkjasdnfk oah sdoiashd ashfa fpaisdoi asjfoisahfoiwd asdhsalk.',
+            link: '/courses/vue'
         }
     ]
 
@@ -51,7 +58,9 @@ const Courses = () => {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button variant="outlined">Syllabus</Button>
+                        <Link href={item.link}>
+                            <Button variant="outlined">Syllabus</Button>
+                        </Link>
                     </CardActions>
                 </Card>
             </Grid>

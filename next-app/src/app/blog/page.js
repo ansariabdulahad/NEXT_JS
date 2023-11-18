@@ -1,10 +1,12 @@
+import Layout from "../../../Component/Layout/Layout";
 import Navbar from "../../../Component/Navbar/Navbar";
 
 const Blog = () => {
     const design = (
         <>
-            <Navbar />
-            <h1>Welcome to the Blog !</h1>
+            <Layout>
+                <h1>Welcome to the Blog !</h1>
+            </Layout>
         </>
     );
     return design;
