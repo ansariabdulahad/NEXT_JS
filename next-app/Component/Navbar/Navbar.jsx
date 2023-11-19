@@ -1,7 +1,11 @@
 import { AppBar, Stack, Toolbar, Typography } from "@mui/material";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+
+    const pathname = usePathname();
+
     const design = (
         <>
             <AppBar position="static">
@@ -11,16 +15,24 @@ const Navbar = () => {
                     </Toolbar>
                     <Stack direction={'row'}>
                         <Toolbar>
-                            <Link href={'/'}>Home</Link>
+                            <Link href={'/'}
+                                className={pathname === '/' ? 'bg-danger p-3 px-3' : ''}
+                            >Home</Link>
                         </Toolbar>
                         <Toolbar>
-                            <Link href={'/courses'}>Courses</Link>
+                            <Link href={'/courses'}
+                                className={pathname === '/courses' ? 'bg-danger p-3 px-3' : ''}
+                            >Courses</Link>
                         </Toolbar>
                         <Toolbar>
-                            <Link href={'/blog'}>Blog</Link>
+                            <Link href={'/blog'}
+                                className={pathname === '/blog' ? 'bg-danger p-3 px-3' : ''}
+                            >Blog</Link>
                         </Toolbar>
                         <Toolbar>
-                            <Link href={'/login'}>Login</Link>
+                            <Link href={'/login'}
+                                className={pathname === '/login' ? 'bg-danger p-3 px-3' : ''}
+                            >Login</Link>
                         </Toolbar>
                     </Stack>
                 </Stack>
